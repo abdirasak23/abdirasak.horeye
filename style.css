@@ -551,6 +551,16 @@ a{
     bottom: 30px;
 }
 
+.copy i{
+    display: none;
+}
+.cv i{
+    display: none;
+}
+.social i{
+    display: none;
+}
+
 
 @media (max-width: 480px){
     html, body{
