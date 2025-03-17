@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    /* background-color: rgb(180, 167, 167); */
+    font-family: 'Outfit';
+    /* display: block; */
+}
+
+body{
+    display: block;
+}
+
+.main{
+    height: 500px;
+    width: 99%;
+    background-color: #ded3d3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    position: absolute;
+    z-index: 2;
+}
+
+.email{
+    position: relative;
+    background-color: rgba(239, 227, 227, 0.395);
+    height: 40px;
+    width: 450px;
+    top: 20px;
+    left: 20px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.email h4{
+    background-color: transparent;
+    position: relative;
+    /* top: 10px; */
+    left: 20px;
+    display: flex;
+    bottom: 10px;
+}
+
+.copy{
+    position: relative;
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    left: 30px;
+    top: 5px;
+    border-radius: 20px;
+}
+
+.cv{
+    position: relative;
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    left: 40px;
+    top: 5px;
+    border-radius: 20px;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.copy h4{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+.cv h4{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
+.social{
+    position: absolute;
+    right: 30px;
+    height: 40px;
+    width: 150px;
+    /* background-color: wheat; */
+    background-color: transparent;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a{
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    position: relative;
+}
+
+.profile{
+    position: relative;
+    height: 220px;
+    width: 400px;
+    top: 10px;
+    /* background-color: white; */
+    left: 450px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+}
+
+.pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.269);
+    overflow: hidden;
+}
+
+.pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name{
+    height: 40px;
+    width: 150px;
+    /* color: blue; */
+    border-radius: 20px;
+    position: absolute;
+    transform: rotate(-10deg);
+    left: 250px;
+    top: 60px;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+
+}
+
+.name h2{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.text{
+    height: 180px;
+    width: 380px;
+    position: relative;
+    left: 470px;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    /* background-color: green; */
+    top: 15px;
+}
+
+.text h2{
+    font-size: 35px;
+    position: relative;
+    bottom: 30px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.back{
+    height: 350px;
+    width: 99%;
+    background-color: #f5eeee;
+    z-index: 1;
+    position: absolute;
+    top: 300px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.deeg{
+    height: 80px;
+    width: 200px;
+    /* background-color: green; */
+    position: relative;
+    /* z-index: 3; */
+    top: 230px;
+    left: 250px;
+    overflow: hidden;
+}
+
+.deeg img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+.wadaag img{
+    height: 100%;
+    width: 110%;
+    object-fit: cover;
+}
+.Golis img{
+    height: 80%;
+    width: 60%;
+    object-fit: cover;
+}
+
+.QalbiXidh img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wadaag{
+    height: 60px;
+    width: 225px;
+    /* background-color: green; */
+    position: relative;
+    /* z-index: 3; */
+    top: 250px;
+    left: 250px;
+    overflow: hidden;
+}
+.QalbiXidh{
+    height: 60px;
+    width: 200px;
+    /* background-color: green; */
+    position: relative;
+    /* z-index: 3; */
+    top: 250px;
+    left: 250px;
+    overflow: hidden;
+}
+.FarxadGaliye{
+    height: 60px;
+    width: 200px;
+    background-color: green;
+    position: relative;
+    /* z-index: 3; */
+    top: 250px;
+    left: 250px;
+    overflow: hidden;
+}
+.Golis{
+    height: 90px;
+    width: 200px;
+    /* background-color: green; */
+    position: relative;
+    /* z-index: 3; */
+    top: 250px;
+    left: 250px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn{
+    position: relative;
+    height: 60px;
+    width: 250px;
+    background-color: rgba(21, 21, 21, 0.909);
+    left: 520px;
+    bottom: 30px;
+    border-radius: 40px;
+    text-align: center;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.learn h2{
+    color: white;
+    position: relative;
+    /* padding: 13px; */
+    font-weight: 400;
+    bottom: 5px;
+}
+
+.learn i{
+    color: white;
+}
+
+.center{
+    height: 780px;
+    width: 100%;
+    z-index: 0;
+    background-color: #ded3d3;
+    position: relative;
+    top: 430px;
+}
+
+.headtext{
+    height: 100px;
+    width: 500px;
+    /* background-color: green; */
+    position: relative;
+    top: 220px;
+    left: 400px;
+    text-align: center;
+}
+
+.headtext h2{
+    font-size: 28px;
+}
+
+.line{
+    position: relative;
+    height: 2px;
+    width: 400px;
+    background-color: rgb(107, 103, 103);
+    top: 250px;
+    left: 150px;
+}
+
+.service{
+    height: 40px;
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: absolute;
+    top: 335px;
+    border-radius: 40px;
+    left: 520px;
+    z-index: 2;
+    transform: rotate(-8deg);
+    text-align: center;
+    overflow: hidden;
+}
+
+.line2{
+    position: relative;
+    height: 2px;
+    width: 400px;
+    background-color: rgb(107, 103, 103);
+    top: 245px;
+    left: 650px;
+    overflow: hidden;
+}
+
+.service h2{
+    font-size: 14px;
+}
+
+.parent{
+    height: 300px;
+    width: 950px;
+    /* background-color: rgba(113, 104, 104, 0.457); */
+    position: relative;
+    top: 280px;
+    left: 140px;
+    display: flex;
+    gap: 20px;
+}
+
+.child{
+    height: 300px;
+    width: 300px;
+    /* background-color: white; */
+    display: block;
+}
+
+.child .head{
+    height: 50px;
+    width: 200px;
+    /* background-color: rgba(0, 0, 0, 0.242); */
+    position: relative;
+    top: 40px;
+}
+
+.child .start{
+    height: 40px;
+    width: 250px;
+    /* background-color: grey; */
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+}
+
+.child .discription{
+    height: 150px;
+    width: 285px;
+    /* background-color: rgba(248, 29, 29, 0.32); */
+    position: relative;
+    top: 60px;
+    overflow: hidden;
+}
+
+.child .head i{
+    font-size: 45px;
+    position: relative;
+    left: 10px;
+}
+
+.child .start h2{
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+}
+
+.child .discription p{
+    position: relative;
+    left: 8px;
+}
+
+.last{
+    height: 450px;
+    width: 99%;
+    background-color: #f5eeee;
+    /* z-index: 4; */
+    /* top: 1150px */
+    position: absolute;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    overflow: hidden;
+    top: 1150px;
+    z-index: 2;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.greet{
+    height: 100px;
+    width: 100px;
+    /* background-color: rgb(104, 23, 23); */
+    border-radius: 100%;
+    background: linear-gradient(to bottom, rgba(188, 180, 180, 0.9) 0%, rgba(177, 169, 169, 0.411) 50%, rgba(241, 234, 234, 0.402) 100%);
+    position: relative;
+    left: 600px;
+    top: 40px;
+    overflow: hidden;
+}
+
+.greet img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.talk{
+    height: 120px;
+    width: 500px;
+    /* background-color: rgba(0, 0, 0, 0.281); */
+    position: relative;
+    top: 45px;
+    left: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.talk h2{
+    font-size: 40px;
+    position: relative;
+    bottom: 30px;
+    overflow: hidden;
+}
+
+.contactme{
+    height: 40px;
+    width: 130px;
+    background-color: black;
+    border-radius: 40px;
+    left: 50px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.contactme2{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(241, 236, 236);
+    border-radius: 40px;
+    left: 50px;
+    position: relative;
+    top: 20px;
+    border: 1px solid rgba(188, 186, 186, 0.658);
+    overflow: hidden;
+}
+
+.contact{
+    height: 80px;
+    width: 400px;
+    /* background-color: rgba(0, 0, 0, 0.128); */
+    left: 440px;
+    position: relative;
+    top: 30px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contactme h2{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    bottom: 6px;
+    text-decoration: none;
+}
+
+.contactme2 h2{
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    position: relative;
+    bottom: 6px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.end{
+    height: 2px;
+    width: 1100px;
+    background-color: rgba(0, 0, 0, 0.676);
+    position: relative;
+    top: 50px;
+    left: 80px;
+}
+
+.copyright{
+    height: 40px;
+    width: 200px;
+    /* background-color: rgba(128, 128, 128, 0.53); */
+    position: relative;
+    top: 70px;
+    left: 50px;
+    text-align: center;
+}
+
+
+.cont{
+    height: 40px;
+    width: 200px;
+    /* background-color: rgba(128, 128, 128, 0.53); */
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cont a{
+    position: relative;
+    bottom: 30px;
+}
+
+
+@media (max-width: 480px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .email{
+        width: 230px;
+        font-size: 12px;
+        height: 30px;
+        position: relative;
+        left: 2px;
+    }
+
+    .email h4{
+        position: relative;
+        left: 5px;
+    }
+
+    .copy i{
+        position: relative;
+        left: 5px;
+        top: 2px;
+    }
+    .cv i{
+        position: relative;
+        left: 0px;
+        top: 2px;
+    }
+    .copy i{
+        position: relative;
+        left: 5px;
+        top: 2px;
+    }
+
+    .copy{
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        position: relative;
+        left: 10px;
+    }
+    .cv{
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        position: relative;
+        left: 15px;
+    }
+
+    .copy h4{
+        display: none;
+    }
+
+    .cv h4{
+        display: none;
+    }
+
+    .social a{
+        display: none;
+    }
+
+    .social{
+        gap: 10px;
+        right: -40px;
+        /* bottom: 60px !important; */
+        /* background-color: blue; */
+    }
+
+    .social i{
+        position: relative;
+        bottom: 6px;
+    }
+
+    .main{
+        height: 350px;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .profile{
+        position: relative;
+        left: -45px;
+    }
+
+    .pic{
+        height: 150px;
+        width: 150px;
+    }
+
+    .name{
+        height: 30px;
+        width: 130px;
+        left: 220px;
+        transform: rotate(-10deg);
+    }
+
+    .name h2{
+         position: relative;
+         bottom: 5px;
+    }
+
+
+    .text{
+        position: absolute;
+        left: 50px;
+        font-size: 14px;
+        /* background-color: blue; */
+        width:200px;
+        height: 50px;
+        top: 230px;
+    }
+
+    .text h2{
+        font-size: 15px;
+        position: relative;
+        top: -10px;
+    }
+
+    .learn{
+        position: relative;
+        left: 100px;
+        height: 40px;
+        width: 100px;
+        font-size: 8px;
+        top: 30px;
+    }
+
+    .learn h2{
+        position: relative;
+        top: 2px;
+    }
+
+}
