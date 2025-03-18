@@ -668,13 +668,13 @@ a{
         display: none;
     }
 
-    .social a{
+    .social .text-social{
         display: none;
     }
 
     .social{
-        gap: 10px;
-        right: -20px;
+        gap: 0px;
+        right: -30px;
         overflow: hidden;
         /* bottom: 60px !important; */
         /* background-color: blue; */
@@ -682,9 +682,10 @@ a{
 
     .social i{
         position: relative;
-        bottom: 6px;
+        top: 5px;
         display: block;
         overflow: hidden;
+        height: 30px;
     }
 
     .main{
@@ -819,7 +820,7 @@ a{
     .headtext{
         /* background-color: blue; */
         left: 40px;
-        top: 80px;
+        top: 60px;
         height: 50px;
         width:280px;
         overflow: hidden;
