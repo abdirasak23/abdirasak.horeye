@@ -640,6 +640,7 @@ a{
     .social{
         gap: 10px;
         right: -20px;
+        overflow: hidden;
         /* bottom: 60px !important; */
         /* background-color: blue; */
     }
@@ -648,6 +649,7 @@ a{
         position: relative;
         bottom: 6px;
         display: block;
+        overflow: hidden;
     }
 
     .main{
@@ -856,14 +858,14 @@ a{
 
     .greet{
         position: relative;
-        left: 130px;
+        left: 160px;
         width: 60px;
         height: 60px;
     }
 
     .talk{
         position: relative;
-        left: 0px;
+        left: 20px;
         /* background-color: blue; */
         overflow: hidden;
         height: 40px;
@@ -879,7 +881,7 @@ a{
 
     .contact{
         position: relative;
-        left: 0px;
+        left: 30px;
         /* background-color: grey; */
         height: 60px;
         top: 40px;
@@ -893,13 +895,14 @@ a{
     }
 
     .contactme2{
-        left: 180px;
+        left: 160px;
     }
+    
 
     .end{
         position: relative;
         left: 50px;
-        width: 240px;
+        width: 260px;
         top: 80px;
         height: 1px;
         
@@ -912,7 +915,7 @@ a{
 
     .copyright{
         position: relative;
-        left: 60px;
+        left: 90px;
         font-size: 12px;
     }
 
