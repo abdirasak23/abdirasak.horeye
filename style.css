@@ -688,6 +688,10 @@ a{
         height: 30px;
     }
 
+    .social a{
+        overflow: hidden;
+    }
+
     .main{
         height: 350px;
         border-bottom-right-radius: 60px;
