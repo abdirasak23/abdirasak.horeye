@@ -561,6 +561,10 @@ a{
     display: none;
 }
 
+.projects{
+    display: none;
+}
+
 
 @media (max-width: 480px){
      
@@ -573,6 +577,37 @@ a{
         overflow-x: hidden;
     }
 
+
+    .projects{
+        height: 50px;
+        width: 340px;
+        position: relative;
+        left: 0px;
+        display: flex;
+        gap: 10px;
+        top: 80px;
+        /* background-color: blue; */
+    }
+
+    .pro{
+        height: 50px;
+        width: 100px;
+        left: 10px;
+        position: relative;
+        /* background-color: green; */
+        overflow: hidden;
+    }
+
+    .pro img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: grayscale(100%) brightness(90%);
+    }
+
+    .pro img:hover{
+        filter: none;
+    }
     
     
 
