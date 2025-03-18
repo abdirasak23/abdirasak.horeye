@@ -563,14 +563,11 @@ a{
 
 
 @media (max-width: 480px){
-    html, body{
-        overflow-x: hidden;
-        width: 100%;
-    }
+    
 
-    *{
-        overflow-x: hidden;
-    }
+
+    
+    
 
     .email{
         width: 230px;
@@ -806,36 +803,19 @@ a{
     }
 
     .parent{
-        /* background-color: blue; */
+        background-color: blue;
         position: relative;
-        overflow: hidden;
         left: 10px;
         top: 50px;
         display: grid;
         grid-template-columns: 1fr;
         width: 300px;
         gap: 0px;
-        height: 900px;
-        margin-top: 40px;
-    }
-
-    #middle-one{
-        background-color: green;
-        position: relative;
     }
 
     #lastone{
         position: relative;
-        top: 10px;
-    }
-
-    
-
-    .child{
-       position: relative;
-       top: 0px; 
-       height: 250px;
-       overflow: hidden;
+        top: -40px;
     }
 
     .last{
@@ -873,31 +853,14 @@ a{
         background-color: grey;
         height: 60px;
         top: 40px;
-        overflow: hidden;
-        gap: 0px;
     }
 
-.contactme{
-    width: 100px;
-    position: absolute;
-    left: 60px;
-}
-.contactme2{
-    width: 100px;
-    position: absolute;
-    left: 180px;
-}
-
-.contactme h2, .contactme2 h2{
-    font-size: 14px;
-}
-.contactme .contactme2{
-
-    height: 30px;
-}
-
-
-    
+    .contactme, .contactme2{
+        height: 40px;
+        width: 100px;
+        position: relative;
+        top: 5px;
+    }
 
     .end{
         position: relative;
