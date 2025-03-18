@@ -563,10 +563,12 @@ a{
 
 
 @media (max-width: 480px){
-    
+     
 
 
-    
+    *{
+        overflow-x: hidden;
+    }
     
 
     .email{
@@ -755,16 +757,18 @@ a{
     .center{
         position: absolute;
         bottom: 90px;
-        width: 315px;
+        width: 354px;
         height: 950px;
+        overflow: hidden;
     }
 
     .headtext{
-        /* background-color: blue; */
-        left: 15px;
-        top: 30px;
-        height: 40px;
+        background-color: blue;
+        left: 40px;
+        top: 80px;
+        height: 50px;
         width:280px;
+        overflow: hidden;
         
     }
 
@@ -775,23 +779,23 @@ a{
     .line , .line2{
         position: relative;
         left: 20px;
-        top: 40px;
+        top: 90px;
     }
 
     .line{
-        width: 100px;
+        width: 150px;
     }
 
     .line2{
-        width: 100px;
-        left: 180px;
-        top: 38px;
+        width: 150px;
+        left: 190px;
+        top: 88px;
     }
 
     .service{
         position: absolute;
-        left: 110px;
-        top: 80px;
+        left: 150px;
+        top: 130px;
         width: 80px;
         height: 25px;
     }
@@ -803,15 +807,22 @@ a{
     }
 
     .parent{
-        background-color: blue;
+        /* background-color: blue; */
         position: relative;
-        left: 10px;
-        top: 50px;
+        left: 30px;
+        top: 70px;
         display: grid;
         grid-template-columns: 1fr;
         width: 300px;
         gap: 0px;
+        overflow: hidden;
+        height: 900px;
     }
+
+    /* .child{
+        overflow: hidden;
+        position: absolute;
+    } */
 
     #lastone{
         position: relative;
@@ -834,7 +845,7 @@ a{
     .talk{
         position: relative;
         left: 0px;
-        background-color: blue;
+        /* background-color: blue; */
         overflow: hidden;
         height: 40px;
         text-align: center;
@@ -850,7 +861,7 @@ a{
     .contact{
         position: relative;
         left: 0px;
-        background-color: grey;
+        /* background-color: grey; */
         height: 60px;
         top: 40px;
     }
@@ -858,8 +869,12 @@ a{
     .contactme, .contactme2{
         height: 40px;
         width: 100px;
-        position: relative;
+        position: absolute;
         top: 5px;
+    }
+
+    .contactme2{
+        left: 180px;
     }
 
     .end{
