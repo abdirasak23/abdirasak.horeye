@@ -51,6 +51,7 @@ body{
     left: 30px;
     top: 5px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .cv{
@@ -68,12 +69,16 @@ body{
 .copy h4{
     text-align: center;
     position: relative;
-    bottom: 15px;
+    bottom: 13px;
+    left: 12px;
+    font-size: 14px;
 }
 .cv h4{
     text-align: center;
     position: relative;
-    bottom: 15px;
+    bottom: 13px;
+    left: 24px;
+    font-size: 14px;
 }
 
 .social{
