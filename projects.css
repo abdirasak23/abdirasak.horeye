@@ -221,9 +221,9 @@ body{
     }
 
     .banner{
-        width:  320px;
+        width:  340px;
         position: relative;
-        left: 10px;
+        left: 0px;
         height: 150px;
     }
 

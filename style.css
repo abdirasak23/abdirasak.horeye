@@ -171,6 +171,11 @@ body{
     font-weight: 600;
 }
 
+.learn{
+    cursor:pointer;
+}
+
+
 .back{
     height: 350px;
     width: 99%;
