@@ -291,7 +291,7 @@ object-fit: cover;
     }
 
     .latest-article{
-        background-color: red;
+        /* background-color: red; */
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
