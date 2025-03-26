@@ -295,6 +295,7 @@ body{
         overflow: hidden;
         position: relative;
         left: 0px;
+        height: auto;
         /* background-color: green; */
     }
 
