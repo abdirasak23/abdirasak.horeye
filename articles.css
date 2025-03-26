@@ -291,7 +291,7 @@ object-fit: cover;
     }
 
     .latest-article{
-        /* background-color: red; */
+        background-color: red;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
@@ -300,14 +300,14 @@ object-fit: cover;
     }
 
     .article-image{
-        width: 360px;
+        width: 390px;
         position: relative;
-        left: 0px;
+        left: 2px;
         height: 240px;
     }
 
     .image{
-        width: 340px;
+        width: 370px;
         height: 220px;
     }
 
@@ -359,7 +359,7 @@ object-fit: cover;
         font-size: 24px;
         position: relative;
         bottom: 15px;
-        width: 340px;
+        width: 380px;
     }
 
     .article-description{
@@ -415,7 +415,7 @@ object-fit: cover;
 
     .article-cards{
         position: relative;
-        left: 0px;
+        left: 20px;
         width: 340px;
         /* background-color: rgb(59, 59, 121); */
     }

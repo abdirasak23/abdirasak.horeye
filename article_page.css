@@ -209,7 +209,7 @@ body{
         position: relative;
         left: 0px;
         bottom: 20px;
-        width: 340px;
+        width: 360px;
         font-size: 28px;
     }
 
@@ -238,13 +238,13 @@ body{
     .name li{
         position: relative;
         left: 0px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .date{
         /* background-color: red; */
         position: relative;
-        left: -30px;
+        left: 0px;
         overflow: hidden;
         width: 80px;
     }
