@@ -394,6 +394,15 @@ object-fit: cover;
         top: 20px;
     }
 
+    .heads h2 {
+        position: relative;
+        bottom: 15px;
+    }
+    .heads h3 {
+        position: relative;
+        bottom: 35px;
+    }
+
     .articles{
         display: grid;
         height: 1500px;
@@ -406,7 +415,27 @@ object-fit: cover;
 
     .article-cards{
         position: relative;
-        left: 20px;
+        left: 0px;
+        width: 340px;
+        /* background-color: rgb(59, 59, 121); */
+    }
+
+    .article-img{
+        width: 340px;
+        height: 180px;
+    }
+
+
+    .date{
+        position: relative;
+        top: 30px;
+        height: 20px;
+        display: block;
+        /* background-color: yellow; */
+    }
+
+    .the-title{
+        font-size: 22px;
     }
 
     .article-description{
