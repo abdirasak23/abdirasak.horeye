@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    background-color: #ece5e5;
+    font-family: 'Outfit';
+}
+
+
+.article-image{
+    height: 300px;
+    width: 1240px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.title-bar{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+.title h2{
+    font-size: 34px;
+    width: 650px;
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    left: 20px;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+.author{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    /* background-color: green; */
+    display: flex;
+}
+
+.name{
+    height: 40px;
+    width: 660px;
+    /* background-color: blue; */
+    display: flex;
+    gap: 50px;
+    
+}
+
+.name li{
+    position: relative;
+    top: 5px;
+}
+
+.social{
+    height: 40px;
+    /* background-color: grey; */
+    width: 340px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+}
+
+.name h2{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+}
+
+.name span{
+    font-weight: 400;
+}
+
+.soc{
+    height: 40px;
+    width: 60px;
+    /* background-color: blue; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.soc i{
+    font-size: 30px;
+    top: 5px;
+    position: relative;
+}
+
+.soc i:hover{
+    color: blue;
+}
+
+.soc i.fa-square-x-twitter:hover{
+    color: rgb(65, 65, 65);
+}
+.soc i.fa-square-whatsapp:hover{
+    color: green;
+}
+.soc i.fa-share-nodes:hover{
+    color: rgb(0, 60, 0);
+}
+
+
+
+.social h2{
+    font-size: 16px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 400;
+}
+
+.the-article{
+    height: 500px;
+    width: 100%;
+    /* background-color: green; */
+    position: relative;
+    top: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.article-bar{
+    height: 500px;
+    width: 950px;
+    /* background-color: grey; */
+}
+
+.latest-articles{
+    height: 500px;
+    width: 300px;
+    overflow-y: auto;
+    /* background-color: rgb(120, 43, 43); */
+    overflow-x: hidden;
+}
+
+.heads h2{
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    font-weight: 400;
+}
+
+.image{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    left: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.my-article-title h2{
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.article-bar p{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+}
+
+
+.article-image, .image{
+    overflow: hidden;
+}
+
+.article-image img , .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
