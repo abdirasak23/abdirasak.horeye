@@ -228,7 +228,7 @@ body{
 
     .name{
        /* background-color: blueviolet; */
-       gap: 40px;
+       gap: 15px;
        height: 30px;
        overflow: hidden;
     }
@@ -249,15 +249,15 @@ body{
     .date{
         /* background-color: red; */
         position: relative;
-        left: -25px;
+        left: -15px;
         overflow: hidden;
         width: 80px;
     }
 
     .date h2{
-        font-size: 12px;
+        font-size: 11px;
         position: relative;
-        bottom: 5px;
+        bottom: 2px;
     }
 
     .social{
