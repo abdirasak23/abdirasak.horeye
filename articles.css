@@ -113,8 +113,14 @@ body{
 
 .article-description{
     /* background-color: red; */
+    overflow: hidden;
     height: 90px;
     width: 500px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit text to 3 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .article-description h5{
@@ -320,8 +326,9 @@ object-fit: cover;
         /* background-color: grey; */
         position: relative;
         left: 0px;
-        top: 10px;
-        height: 250px;
+        top: 20px;
+        height: 290px;
+        overflow: hidden;
     }
 
     .time{
@@ -352,11 +359,13 @@ object-fit: cover;
     .article-title{
         /* background-color: yellow; */
         width: 100%;
-        height: 80px;
+        height: 90px;
+        position: relative;
+        top: 20px;
     }
 
     .article-title h2{
-        font-size: 24px;
+        font-size: 22px;
         position: relative;
         bottom: 15px;
         width: 380px;
@@ -364,6 +373,22 @@ object-fit: cover;
 
     .article-description{
         /* background-color: rgb(82, 59, 59); */
+        width: 368px;
+        position: relative;
+        top: 10px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .article-description h5{
+        position: relative;
+        top: -20px;
+        overflow: hidden;
+        display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit text to 3 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
     }
 
     .read-more{
@@ -371,6 +396,8 @@ object-fit: cover;
         color: blue;
         overflow: hidden;
         height: 30px;
+        position: relative;
+        top: 8px;
     }
 
     .read-more h2{

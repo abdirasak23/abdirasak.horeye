@@ -159,10 +159,15 @@ body{
     left: 10px;
 }
 
+.article-bar{
+    /* background-color: green; */
+}
+
 .article-bar p{
     font-size: 20px;
     position: relative;
     left: 20px;
+    width: 900px;
 }
 
 
