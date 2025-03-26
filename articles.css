@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    background-color: #ece5e5;
+    font-family: 'Outfit';
+}
+
+
+.latest-article{
+    /* background-color: grey; */
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.article-image{
+    height: 320px;
+    width: 640px;
+    background-color: #ece5e5;
+    position: relative;
+    left: 5px;
+    top: 20px;
+    border-radius: 20px;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image{
+    height: 300px;
+    width: 620px;
+    background-color: rgb(60, 21, 21);
+    position: relative;
+    left: 0px;
+    top: 20px;
+    border-radius: 20px;
+    left: 10px;
+    top: 10px;
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-info{
+    height: 350px;
+    width: 600px;
+    /* background-color: blue; */
+    position: relative;
+    left: 50px;
+}
+
+
+.time{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    border-radius: 40px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.new{
+    height: 40px;
+    width: 80px;
+    background-color: #cdb9b9;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.new h2{
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 400;
+}
+
+.time .t{
+    position: relative;
+    left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+.article-title{
+    width: 500px;
+    height: 150px;
+    /* background-color: yellow; */
+    position: relative;
+    top: 30px;
+    overflow: hidden;
+}
+
+.article-title h2{
+    font-size: 38px;
+    font-weight: 500;
+    position: relative;
+    bottom: 30px;
+}
+
+.article-description{
+    /* background-color: red; */
+    height: 90px;
+    width: 500px;
+}
+
+.article-description h5{
+    font-weight: 300;
+    top: 0px;
+    position: relative;
+    font-size: 16px;
+}
+
+.read-more{
+    height: 30px;
+    width: 120px;
+    /* background-color: white; */
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    color: blue;
+    cursor: pointer;
+}
+.read-more2{
+    height: 30px;
+    width: 120px;
+    /* background-color: white; */
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+.read-more h2{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
+.read-more2 h2{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
+
+.read-more i{
+    font-size: 18px;
+    /* color: red; */
+    position: relative;
+    top: 8px;
+}
+.read-more2 i{
+    font-size: 18px;
+    /* color: red; */
+    position: relative;
+    top: 8px;
+    
+}
+
+.all-articles{
+    height: 500px;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.heads{
+    height: 60px;
+    width: 300px;
+    /* background-color: blue; */
+}
+
+.heads h2{
+    font-weight: 500;
+}
+
+.heads h3{
+    position: relative;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.articles{
+    height: 400px;
+    width: 100%;
+    /* background-color: grey; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-content: start;
+    margin-top: 40px;
+}
+
+
+
+.article-img img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+
+}
+
+.article-cards{
+    height:380px;
+    width: 290px;
+    background-color: transparent;
+    position: relative;
+    left: 0px;
+}
+
+.article-img{
+    height: 180px;
+    width: 290px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.writer{
+    height: 40px;
+    width: 290px;
+    /* background-color: red; */
+    display: flex;
+    
+    gap: 60px;
+}
+
+.writer h2{
+    position: relative;
+    bottom: 0px;
+    font-size: 14px;
+    color: rgb(238, 155, 0);
+}
+
+.writer .date{
+    color: rgba(34, 34, 34, 0.616);
+    position: absolute;
+    right: 0px;
+    top: 180px;
+}
+
+.the-title{
+    height: 50px;
+    width: 290px;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+
+.the-title h2{
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+.the-description h2{
+    position: relative;
+    bottom: 18px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.the-description{
+    height: 60px;
+    width: 290px;
+    /* background-color: rgb(111, 111, 13); */
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+}
+
+
+@media (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .latest-article{
+        /* background-color: red; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 700px;
+        height: 500px;
+    }
+
+    .article-image{
+        width: 340px;
+        position: relative;
+        left: 0px;
+        height: 240px;
+    }
+
+    .image{
+        width: 320px;
+        height: 220px;
+    }
+
+    .time{
+        position: relative;
+        left: 0px;
+    }
+
+    .article-info{
+        /* background-color: grey; */
+        position: relative;
+        left: 0px;
+        top: 10px;
+        height: 250px;
+    }
+
+    .time{
+        height: 40px;
+        overflow: hidden;
+        width: 180px;
+    }
+
+
+    .new{
+        height: 30px;
+        width: 60px;
+        overflow: hidden;
+    }
+
+    .new h2{
+        position: relative;
+        bottom: 12px;
+    }
+
+    .t{
+        overflow: hidden;
+        position: relative;
+        top: -6px;
+        height: 40px;
+    }
+
+    .article-title{
+        /* background-color: yellow; */
+        width: 100%;
+        height: 80px;
+    }
+
+    .article-title h2{
+        font-size: 24px;
+        position: relative;
+        bottom: 15px;
+        width: 340px;
+    }
+
+    .article-description{
+        /* background-color: rgb(82, 59, 59); */
+    }
+
+    .read-more{
+        /* background-color: white; */
+        color: blue;
+        overflow: hidden;
+        height: 30px;
+    }
+
+    .read-more h2{
+        position: relative;
+        bottom: 10px;
+        overflow: hidden;
+        height: 40px;
+    }
+
+    .all-articles{
+        /* background-color: grey; */
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .heads{
+        /* background-color: red; */
+        overflow: hidden;
+        position: relative;
+        top: 20px;
+    }
+
+    .articles{
+        display: grid;
+        height: 1500px;
+        grid-template-columns: 1fr;
+        /* background-color: yellow; */
+        overflow: hidden;
+        position: relative;
+        height: auto;
+    }
+
+    .article-cards{
+        position: relative;
+        left: 20px;
+    }
+
+    .article-description{
+        overflow: hidden;
+    }
+
+
+    .read-more2{
+        /* background-color: yellow; */
+        overflow: hidden;
+    }
+
+    .read-more2 h2{
+        height: 40px;
+    }
+   
+}
