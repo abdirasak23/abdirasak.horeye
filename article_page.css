@@ -175,3 +175,112 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+
+@media (max-width:480px){
+    body{
+        overflow: hidden;
+    }
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .article-image{
+        width: 340px;
+        height: 250px;
+        overflow: hidden;
+        /* background-color: blue; */
+    }
+
+    .title-bar{
+        /* background-color: gray; */
+        position: relative;
+        top: 10px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .title-bar h2{
+        overflow: hidden;
+        position: relative;
+        left: 0px;
+        bottom: 20px;
+        width: 340px;
+        font-size: 28px;
+    }
+
+    .author{
+        /* background-color: yellow; */
+        height: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    .name{
+       /* background-color: blueviolet; */
+       gap: 40px;
+       height: 30px;
+       overflow: hidden;
+    }
+
+    .name h2{
+        height: 40px;
+        position: relative;
+        left: 5px;
+        font-size: 16px;
+    }
+
+    .name li{
+        position: relative;
+        left: 0px;
+        font-size: 12px;
+    }
+
+    .social{
+        position: relative;
+        /* background-color: red; */
+        bottom: 2px;
+        overflow: hidden;
+    }
+
+    .soc{
+        overflow: hidden;
+    }
+
+    .social h2{
+        height: 20px;
+    }
+
+    .the-article{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        height: auto;
+    }
+
+    .latest-articles{
+        display: none;
+    }
+
+    .article-bar{
+        overflow: hidden;
+        position: relative;
+        left: 0px;
+        /* background-color: green; */
+    }
+
+    .article-bar p{
+        position: relative;
+        left: 0px;
+        bottom: 20px;
+        height: auto;
+    }
+
+    .soc i{
+        overflow: hidden;
+    }
+}
