@@ -252,6 +252,7 @@ body{
 
     .social h2{
         height: 20px;
+        overflow: hidden;
     }
 
     .the-article{
