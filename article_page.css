@@ -114,7 +114,7 @@ body{
 }
 
 .the-article{
-    height: 500px;
+    height: auto;
     width: 100%;
     /* background-color: green; */
     position: relative;
@@ -124,7 +124,7 @@ body{
 }
 
 .article-bar{
-    height: 500px;
+    height: auto;
     width: 950px;
     /* background-color: grey; */
 }
@@ -167,7 +167,7 @@ body{
     font-size: 20px;
     position: relative;
     left: 20px;
-    width: 900px;
+    width: 850px;
 }
 
 
