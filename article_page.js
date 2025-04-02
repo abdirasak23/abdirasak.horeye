@@ -41,6 +41,16 @@ async function fetchAllArticles() {
   return data;
 }
 
+// Helper function to format article text into multiple paragraphs
+function formatArticleText(text) {
+  // Splitting text at one or more newline characters
+  return text
+    .split(/\n+/)
+    .filter(paragraph => paragraph.trim().length > 0) // remove empty paragraphs
+    .map(paragraph => `<p>${paragraph.trim()}</p>`)
+    .join('');
+}
+
 // Display the main article using the provided containers in the HTML
 function displayMainArticle(article) {
   // Main image container
@@ -73,7 +83,8 @@ function displayMainArticle(article) {
   // Article content container (the article's full text)
   const articleBar = document.querySelector('.the-article .article-bar');
   if (articleBar) {
-    articleBar.innerHTML = `<p>${article.description}</p>`;
+    // Use the helper function to format the description
+    articleBar.innerHTML = formatArticleText(article.description);
   }
 }
 
