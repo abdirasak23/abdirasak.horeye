@@ -12,6 +12,28 @@ function getArticleIdFromUrl() {
   return params.get('id');
 }
 
+// Function to create URL-friendly slug from title
+function createSlug(title) {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')    // strip out special chars
+    .replace(/[\s_-]+/g, '-')    // spaces/underscores → hyphens
+    .replace(/^-+|-+$/g, '');    // trim leading/trailing hyphens
+}
+
+// Function to generate the full article URL
+function generateArticleUrl(title, id) {
+  const slug = createSlug(title);
+  const base =
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1'
+      ? `${window.location.protocol}//${window.location.host}`
+      : 'https://www.horeye.me';
+  return `${base}/Articles/?article=${slug}&id=${id}`;
+}
+
+
 // Fetch a single article by its ID
 async function fetchArticleById(id) {
   const { data, error } = await supabase
@@ -115,7 +137,7 @@ function displayOtherArticles(articles, mainArticleId) {
 
     // Make each other article clickable to navigate to its own page
     card.addEventListener('click', () => {
-      window.location.href = `article_page.html?articleId=${article.id}`;
+      window.location.href = generateArticleUrl(article.title, article.id);
     });
 
     container.appendChild(card);
