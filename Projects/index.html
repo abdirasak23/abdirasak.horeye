@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Portfolio</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="https://horeye.me/images/icon.png" type="image/png" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+   
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Projects</h1>
+            <p>Innovative solutions and creative applications built with passion and precision. Each project represents a unique challenge solved through modern technology and thoughtful design.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Quality</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Work</h2>
+                <p>A collection of projects that showcase innovation, creativity, and technical excellence</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Shadow Chat -->
+                <div class="project-card" onclick="window.open('https://shadowchat.horeye.me', '_blank');">
+                    <img src="../images/ms.jpeg" alt="Shadow Chat" class="project-image">
+                    <h3 class="project-title">Shadow Chat</h3>
+                    <p class="project-description">Anonymous messaging platform designed for private, secure conversations. Connect with friends or meet new people while maintaining complete privacy.</p>
+                    <div class="project-tags">
+                        <span class="tag">Messaging App</span>
+                        <span class="tag">Privacy</span>
+                        <span class="tag">Real-time</span>
+                    </div>
+                    <a href="https://shadowchat.horeye.me" class="project-link" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+
+                <!-- Deeg Instamart -->
+                <div class="project-card" onclick="window.open('https://www.amazon.com/gp/product/B0DM63S3MW', '_blank');">
+                    <img src="../images/deegs.png" alt="Deeg Instamart" class="project-image">
+                    <h3 class="project-title">Deeg Instamart</h3>
+                    <p class="project-description">Revolutionary e-commerce platform tailored for the Somali community, featuring integrated wallet functionality and seamless shopping experience.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Mobile App</span>
+                        <span class="tag">Wallet Integration</span>
+                    </div>
+                    <a href="https://www.amazon.com/gp/product/B0DM63S3MW" class="project-link" target="_blank">
+                        View on Amazon →
+                    </a>
+                </div>
+
+                <!-- Wadaag App -->
+                <div class="project-card" onclick="window.open('https://apkpure.com/wadaagapp/com.example.wadaagapp', '_blank');">
+                    <img src="../images/wadag.jpg" alt="Wadaag App" class="project-image">
+                    <h3 class="project-title">Wadaag Social</h3>
+                    <p class="project-description">Community-focused social media platform that brings people together through shared interests, local connections, and meaningful conversations.</p>
+                    <div class="project-tags">
+                        <span class="tag">Social Media</span>
+                        <span class="tag">Community</span>
+                        <span class="tag">Mobile App</span>
+                    </div>
+                    <a href="https://apkpure.com/wadaagapp/com.example.wadaagapp" class="project-link" target="_blank">
+                        Download APK →
+                    </a>
+                </div>
+
+                <!-- Cunto Wadaag -->
+                <div class="project-card" onclick="window.open('https://cuntowadaag.horeye.me/', '_blank');">
+                    <img src="../images/ramrec.jpeg" alt="Cunto Wadaag" class="project-image">
+                    <h3 class="project-title">Cunto Wadaag</h3>
+                    <p class="project-description">Comprehensive Somali recipe website featuring traditional dishes, step-by-step cooking instructions, and cultural food stories.</p>
+                    <div class="project-tags">
+                        <span class="tag">Recipe Website</span>
+                        <span class="tag">Cultural Heritage</span>
+                        <span class="tag">Food & Cooking</span>
+                    </div>
+                    <a href="https://cuntowadaag.horeye.me/" class="project-link" target="_blank">
+                        Explore Recipes →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Collaborate?</h2>
+            <p class="cta-description">Have an exciting project in mind? Let's work together to bring your ideas to life with cutting-edge technology and innovative solutions.</p>
+            <a href="mailto:abdirasak@horeye.me" class="cta-button">
+                Get In Touch
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Create animated particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Smooth scroll for CTA button
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Add your contact section scroll logic here
+            console.log('Contact button clicked');
+        });
+
+        // Initialize particles when page loads
+        window.addEventListener('load', createParticles);
+
+        // Add mouse movement parallax effect
+        document.addEventListener('mousemove', (e) => {
+            const particles = document.querySelectorAll('.particle');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            particles.forEach((particle, index) => {
+                const speed = (index % 5 + 1) * 0.5;
+                const xPos = (x - 0.5) * speed;
+                const yPos = (y - 0.5) * speed;
+                particle.style.transform = `translate(${xPos}px, ${yPos}px)`;
+            });
+        });
+
+        // Add scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards for scroll animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -68,13 +68,18 @@ async function fetchAllArticles() {
 
 // Helper function to format article text into multiple paragraphs
 function formatArticleText(text) {
-  // Splitting text at one or more newline characters
-  return text
-    .split(/\n+/)
-    .filter(paragraph => paragraph.trim().length > 0) // remove empty paragraphs
-    .map(paragraph => `<p>${paragraph.trim()}</p>`)
-    .join('');
+  const paragraphs = text
+    .split(/\r?\n+/)
+    .map(p => p.trim())
+    .filter(p => p.length > 0);
+
+  return paragraphs.map(p => {
+    const wrapper = document.createElement('div');
+    wrapper.textContent = p;           // safely escape HTML
+    return `<p>${wrapper.innerHTML}</p>`;
+  }).join('');
 }
+
 
 // Display the main article using the provided containers in the HTML
 function displayMainArticle(article) {
@@ -110,10 +115,9 @@ function displayMainArticle(article) {
 
   // Article content container (the article's full text)
   const articleBar = document.querySelector('.the-article .article-bar');
-  if (articleBar) {
-    // Use the helper function to format the description
-    articleBar.innerHTML = formatArticleText(article.description);
-  }
+if (articleBar && article.description) {
+  articleBar.innerHTML = formatArticleText(article.description);
+}
 }
 
 // Display "other" articles (all articles except the main one) in the .latest-articles container

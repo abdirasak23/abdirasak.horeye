@@ -1,32 +1,30 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Modified sitemap with updated entries -->
-  <url>
-    <loc>https://horeye.me/</loc>
-    <lastmod>2025-04-01T12:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.horeye.me/</loc>
-    <lastmod>2025-04-01T12:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.horeye.me/articles.html</loc>
-    <lastmod>2025-04-01T12:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://horeye.me/projects</loc>
-    <lastmod>2025-04-01T12:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-</urlset>
+  <ns0:url>
+    <ns0:loc>https://horeye.me/</ns0:loc>
+    <ns0:lastmod>2025-04-01T12:00:00+00:00</ns0:lastmod>
+    <ns0:changefreq>daily</ns0:changefreq>
+    <ns0:priority>1.0</ns0:priority>
+  </ns0:url>
+
+  <ns0:url>
+    <ns0:loc>https://www.horeye.me/</ns0:loc>
+    <ns0:lastmod>2025-04-01T12:00:00+00:00</ns0:lastmod>
+    <ns0:changefreq>daily</ns0:changefreq>
+    <ns0:priority>1.0</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://www.horeye.me/articles.html</ns0:loc>
+    <ns0:lastmod>2025-04-01T12:00:00+00:00</ns0:lastmod>
+    <ns0:changefreq>daily</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://horeye.me/projects</ns0:loc>
+    <ns0:lastmod>2025-04-01T12:00:00+00:00</ns0:lastmod>
+    <ns0:changefreq>daily</ns0:changefreq>
+    <ns0:priority>0.7</ns0:priority>
+  </ns0:url>
+  
+<url><loc>https://www.horeye.me/Articles/?article=the-best-environment-for-reading&amp;id=3</loc><lastmod>2025-06-22T13:15:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url><loc>https://www.horeye.me/Articles/?article=how-to-read-something-you-already-know-while-studying&amp;id=2</loc><lastmod>2025-06-21T09:00:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url><loc>https://www.horeye.me/Articles/?article=how-to-read-when-you-cannot-read&amp;id=1</loc><lastmod>2025-06-20T04:45:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url><loc>https://www.horeye.me/Articles/?article=navigating-your-exam-prep-a-complete-roadmap-to-success&amp;id=9</loc><lastmod>2025-04-02T04:22:47.438469+00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url><loc>https://www.horeye.me/Articles/?article=mastering-knowledge-by-embracing-true-self-learning-the-art-of-teaching-yourself&amp;id=8</loc><lastmod>2025-03-26T17:19:34.402398+00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url><loc>https://www.horeye.me/Articles/?article=creating-designs-by-seeing-other-designs-the-power-of-visual-understanding&amp;id=7</loc><lastmod>2025-03-26T16:03:12.277774+00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url></ns0:urlset>
