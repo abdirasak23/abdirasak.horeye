@@ -6,6 +6,9 @@ const supabaseKey =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwdnV3ZWdpYm53dWNneGllaXJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI3MzU2NzEsImV4cCI6MjA1ODMxMTY3MX0.sOmvlv4vjV_EcXze0zYGZSolDst8rg5UqGkc1146Qxw';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+
+
+
 // Helper: Get articleId from URL query parameter
 function getArticleIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -75,6 +78,9 @@ function formatArticleText(text) {
 
 // Display the main article using the provided containers in the HTML
 function displayMainArticle(article) {
+
+  document.title = article.title;
+
   // Main image container
   const imageContainer = document.querySelector('.article-image');
   if (imageContainer) {

@@ -97,11 +97,12 @@ body{
 
 .article-title{
     width: 500px;
-    height: 150px;
+    /* height: 150px; */
     /* background-color: yellow; */
     position: relative;
     top: 30px;
     overflow: hidden;
+    padding-top: 30px;
 }
 
 .article-title h2{
@@ -109,6 +110,9 @@ body{
     font-weight: 500;
     position: relative;
     bottom: 30px;
+    margin: 0;
+    /* line-height: 1.;  */
+    margin-bottom: -20px;
 }
 
 .article-description{
@@ -287,6 +291,8 @@ object-fit: cover;
 }
 
 
+
+
 @media (max-width: 480px){
     body{
         overflow-x: hidden;
@@ -321,6 +327,8 @@ object-fit: cover;
         position: relative;
         left: 0px;
     }
+
+    
 
     .article-info{
         /* background-color: grey; */
