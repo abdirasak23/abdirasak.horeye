@@ -6,6 +6,28 @@ const supabaseKey =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwdnV3ZWdpYm53dWNneGllaXJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI3MzU2NzEsImV4cCI6MjA1ODMxMTY3MX0.sOmvlv4vjV_EcXze0zYGZSolDst8rg5UqGkc1146Qxw';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Function to create URL-friendly slug from title
+function createSlug(title) {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '') // Remove special characters except hyphens and spaces
+    .replace(/[\s_-]+/g, '-') // Replace spaces and underscores with hyphens
+    .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+}
+
+// Function to generate article URL
+function generateArticleUrl(title, id) {
+  const slug = createSlug(title);
+  // Check if we're on localhost for testing
+  const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+    ? `${window.location.protocol}//${window.location.host}` 
+    : 'https://www.horeye.me';
+  
+  // For static sites, use URL parameters with SEO-friendly slug
+  return `${baseUrl}/Articles/?article=${slug}&id=${id}`;
+}
+
 // Fetch all articles from the "Article" table (including the id for linking)
 async function fetchArticles() {
   const { data, error } = await supabase
@@ -58,7 +80,7 @@ function displayLatestArticle(article) {
   const readMore = container.querySelector('.read-more');
   if (readMore) {
     readMore.addEventListener('click', () => {
-      window.location.href = `article_page.html?articleId=${article.id}`;
+      window.location.href = generateArticleUrl(article.title, article.id);
     });
   }
 }
@@ -104,9 +126,9 @@ function displayArticles(articles) {
       </div>
     `;
 
-    // When "Read More" is clicked on this card, navigate to article_page.html with the article's id
+    // When "Read More" is clicked on this card, navigate to the SEO-friendly URL
     card.querySelector('.read-more2').addEventListener('click', () => {
-      window.location.href = `article_page.html?articleId=${article.id}`;
+      window.location.href = generateArticleUrl(article.title, article.id);
     });
 
     container.appendChild(card);

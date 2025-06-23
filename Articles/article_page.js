@@ -9,7 +9,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 // Helper: Get articleId from URL query parameter
 function getArticleIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
-  return params.get('articleId');
+  return params.get('id');
 }
 
 // Fetch a single article by its ID
