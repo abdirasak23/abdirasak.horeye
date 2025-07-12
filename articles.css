@@ -4,6 +4,7 @@
 body{
     background-color: #ece5e5;
     font-family: 'Outfit';
+    overflow-x: hidden;
 }
 
 
@@ -211,7 +212,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     align-content: start;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 
