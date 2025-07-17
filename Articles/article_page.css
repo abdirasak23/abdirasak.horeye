@@ -119,7 +119,7 @@ body{
     width: 100%;
     /* background-color: green; */
     position: relative;
-    top: 40px;
+    top: 20px;
     display: flex;
     overflow: hidden;
 }
@@ -127,7 +127,8 @@ body{
 .article-bar{
     height: auto;
     width: 950px;
-    /* background-color: grey; */
+    /* background-color: rgb(92, 42, 42); */
+    position: relative;
 }
 
 .latest-articles{
@@ -208,7 +209,8 @@ body{
         width: 100%;
         overflow: hidden;
         /* background-color: red; */
-        min-height: 150px;
+        max-height: 150px;
+        height: auto;
 
     }
 
@@ -226,6 +228,8 @@ body{
         /* background-color: yellow; */
         height: 80px;
         display: grid;
+        position: relative;
+        top: 15px;
         grid-template-columns: 1fr;
         overflow: hidden;
     }
@@ -290,6 +294,13 @@ body{
 
     .latest-articles{
         display: none;
+    }
+
+    .the-article{
+        position: relative;
+        /* background-color: grey; */
+        position: relative;
+        bottom: 20px !important;
     }
 
     .article-bar{
