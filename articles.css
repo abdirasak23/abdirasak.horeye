@@ -306,10 +306,10 @@ object-fit: cover;
     .latest-article{
         /* background-color: red; */
         width: 100%;
+        overflow: hidden;
         display: grid;
         grid-template-columns: 1fr;
-        height: 700px;
-        height: 500px;
+        height: auto;
     }
 
     .article-image{
@@ -391,7 +391,7 @@ object-fit: cover;
 
     .article-description h5{
         position: relative;
-        top: -20px;
+        top: -25px;
         overflow: hidden;
         display: -webkit-box;
     -webkit-line-clamp: 3; /* Limit text to 3 lines */
@@ -447,6 +447,7 @@ object-fit: cover;
         overflow: hidden;
         position: relative;
         height: auto;
+        top: 15px;
     }
 
     .article-cards{
