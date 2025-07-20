@@ -181,9 +181,9 @@
             transition: transform 0.3s ease;
         }
 
-        .project-card:hover .project-image {
+        /* .project-card:hover .project-image {
             transform: scale(1.1) rotate(5deg);
-        }
+        } */
 
         .project-title {
             font-size: 1.5rem;
@@ -351,4 +351,42 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+
+
+        .last{
+            display: flex;
+        }
+
+
+        .case{
+            height: 35px;
+            width: 120px;
+            background: linear-gradient(135deg, rgba(139, 92, 80, 0.2), rgba(160, 82, 45, 0.2));
+            position: relative;
+            left: 90px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(139, 92, 80, 0.3);
+            transition: all 0.3s ease;
+            color: #2D2D2D;
+        }
+
+
+        .case p{
+            position: relative;
+            top: 7px;
+            font-size: 14px;
+        }
+
+
+        .case:hover {
+            background: linear-gradient(135deg, rgba(139, 92, 80, 0.3), rgba(160, 82, 45, 0.3));
+            transform: scale(1.05);
+        }
+
+
+        .cases{
+            text-decoration: none;
         }
