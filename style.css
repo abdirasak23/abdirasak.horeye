@@ -590,7 +590,7 @@ a{
 .learn{
     position: relative;
     top: 10px;
-    left: 0px;
+    left: 20px;
 }
 
 .article{
@@ -683,6 +683,8 @@ a{
 
     .learn {
         font-size: 8px !important;
+        position: relative;
+        left: -20px;
     }
     
 
