@@ -252,6 +252,14 @@ body{
     left: 250px;
     overflow: hidden;
 }
+
+.raad{
+    /* background-color: red; */
+    height: 50px;
+    width: 50px !important;
+}
+
+
 .Golis{
     height: 50px;
     width: 240px;
@@ -635,7 +643,8 @@ a{
         height: 50px;
         width: 340px;
         position: relative;
-        left: 0px;
+        left: 20px;
+        /* background-color: blue; */
         display: flex;
         gap: 10px;
         top: 80px;
