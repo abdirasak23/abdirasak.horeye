@@ -255,8 +255,11 @@ body{
 
 .raad{
     /* background-color: red; */
-    height: 50px;
-    width: 50px !important;
+    height: 40px !important;
+    width: 40px !important;
+    position: relative;
+    top: 5px;
+    /* left: 5px !important; */
 }
 
 
